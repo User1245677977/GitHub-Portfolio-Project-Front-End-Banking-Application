@@ -1,0 +1,57 @@
+function AllData(){
+    const ctx = React.useContext(UserContext);
+    return (
+      <>
+      <h5>All Data in Store</h5>
+      {JSON.stringify(ctx)}<br/>
+      </>
+    );
+  }
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>All Data Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <style>
+      .card {
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mt-5 mb-4">All Data</h1>
+  
+      <!-- User Submissions -->
+      <div id="userSubmissions">
+        <!-- Bootstrap Cards for each submission -->
+        <!-- Example of one card -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Submission #1</h5>
+            <p class="card-text">Submitted on: July 16, 2024</p>
+            <p class="card-text">Data: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+        </div>
+        
+        <!-- Example of another card -->
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Submission #2</h5>
+            <p class="card-text">Submitted on: July 15, 2024</p>
+            <p class="card-text">Data: Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+        </div>
+        
+        <!-- Add more cards dynamically using server-side rendering or JavaScript -->
+      </div>
+    </div>
+  
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.2.1/js/bootstrap.bundle.min.js" integrity="sha384-4m3IFaKc5sY5CjH/TaPfmgWc5CZOEP4I1c4nVJ2kRmAg4+BM8hoPb5fVI4ZD+XfF" crossorigin="anonymous"></script>
+  </body>
+  </html>
+  
